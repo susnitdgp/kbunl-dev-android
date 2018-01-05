@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "729326994185",
+    "firebase_url": "https://kbunl-dev.firebaseio.com",
+    "project_id": "kbunl-dev",
+    "storage_bucket": "kbunl-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729326994185:android:664cada972016229",
+        "android_client_info": {
+          "package_name": "kbunl.com.kbunl_dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729326994185-n8ibo8iubjb20530lk9llefs1s81jmaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kbunl.com.kbunl_dev",
+            "certificate_hash": "5979e5bc74d09c66ac7f1e3817f0ce9e14c161dd"
+          }
+        },
+        {
+          "client_id": "729326994185-14beapmtlrobaco78edaj2e71gpbjodd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACOgt5Oe6tFbnxHXFvUX99Ua7cxO0l5Y8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729326994185-14beapmtlrobaco78edaj2e71gpbjodd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

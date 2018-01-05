@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kbunl.com.kbunl_dev">
+
+    <!-- Permission Given to Android Application -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SignInActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Main2Activity" />
+
+        <!-- Sign Up-->
+        <activity
+            android:name=".SignUpActivity"
+            android:parentActivityName=".SignInActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kbunl.com.kbunl_dev.SignInActivity" />
+        </activity>
+
+        <!-- Sign up Success -->
+        <activity
+            android:name=".SignUpSuccessActivity"
+            android:parentActivityName=".SignInActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kbunl.com.kbunl_dev.SignInActivity" />
+        </activity>
+
+        <!-- Reset -->
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".SignInActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kbunl.com.kbunl_dev.SignInActivity" />
+        </activity>
+
+        <!-- Reset Success -->
+        <activity
+            android:name=".ResetSuccessActivity"
+            android:parentActivityName=".SignInActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kbunl.com.kbunl_dev.SignInActivity" />
+        </activity>
+        <activity
+            android:name=".RegisterITcomplainActivity"
+            android:parentActivityName=".ItComplainListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kbunl.com.kbunl_dev.ItComplainListActivity" />
+        </activity>
+        <activity
+            android:name=".LandingActivity"
+            android:label="@string/title_activity_landing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AppSettingsActivity"
+            android:label="@string/title_activity_app_settings"
+            android:parentActivityName=".LandingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kbunl.com.kbunl_dev.LandingActivity" />
+        </activity>
+        <activity
+            android:name=".ItComplainListActivity"
+            android:label="@string/title_itcomplain_list"
+            android:parentActivityName=".LandingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kbunl.com.kbunl_dev.LandingActivity" />
+        </activity>
+        <activity
+            android:name=".ItComplainDetailActivity"
+            android:label="@string/title_itcomplain_detail"
+            android:parentActivityName=".ItComplainListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kbunl.com.kbunl_dev.ItComplainListActivity" />
+        </activity>
+        <activity
+            android:name=".ServiceEngActivity"
+            android:label="@string/title_activity_service_eng">
+
+        </activity>
+    </application>
+
+</manifest>

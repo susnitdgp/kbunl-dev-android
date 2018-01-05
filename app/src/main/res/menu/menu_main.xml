@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user.myapplication.MainActivity">
+
+
+    <item
+        android:id="@+id/home_activity"
+        android:orderInCategory="100"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/reg_it_complain_activity"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_insert_comment_black_24dp"
+        android:title="Register IT Complain"/>
+
+
+    <item
+        android:id="@+id/view_it_complain_activity"
+        android:orderInCategory="300"
+        android:title="View IT Complain"/>
+
+
+    <item
+        android:id="@+id/view_master_detail_activity"
+        android:orderInCategory="300"
+        android:title="Master/Detail"/>
+
+
+
+    <item
+        android:id="@+id/apps_about"
+        android:orderInCategory="300"
+        android:title="About"/>
+
+
+</menu>

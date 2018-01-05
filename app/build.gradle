@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+configurations {
+    all {
+        exclude module: 'httpclient'
+    }
+}
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "kbunl.com.kbunl_dev"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 3
+        versionName '3.0'
+        testInstrumentationRunner "android.support.landing.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:support-vector-drawable:26.1.0'
+    implementation 'com.android.support:support-v4:26.0.0-beta1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-beta1'
+    testImplementation 'junit:junit:4.12'
+    //androidTestImplementation 'com.android.support.landing:runner:1.0.1'
+    //androidTestImplementation 'com.android.support.landing.espresso:espresso-core:3.0.1'
+    //Firebase Dependency
+    compile 'com.google.firebase:firebase-core:11.6.0'
+    compile 'com.google.firebase:firebase-auth:11.6.0'
+    compile 'com.google.firebase:firebase-database:11.6.0'
+    compile 'com.google.firebase:firebase-storage:11.6.0'
+    compile 'com.google.firebase:firebase-crash:11.6.0'
+    //Add the Google API client library for connecting to API
+    compile 'com.google.api-client:google-api-client:+'
+    compile 'com.google.http-client:google-http-client-android:1.22.0'
+    implementation files('libs/gson-2.8.2.jar')
+    implementation files('libs/PhotoUtil.jar')
+    //Complain Service API Library
+    implementation files('libs/iTComplainService-v1-1.23.0-SNAPSHOT.jar')
+}
+// Add to the bottom of the file
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="List of IT Service Engineers"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:textStyle="bold"/>
+
+        <View android:background="#808080"
+            android:layout_width = "match_parent"
+            android:layout_height="2dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vinod@gmail.com"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFemale1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ranjay@gmail.com" />
+            <RadioButton
+                android:id="@+id/radioFemale2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chandan@gmail.com" />
+            <RadioButton
+                android:id="@+id/radioFemale3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="amit@gmail.com" />
+
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Assign Complain"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:layout_below="@+id/checkBoxServiceEngineer" />
+
+    </LinearLayout>
+
+</RelativeLayout>

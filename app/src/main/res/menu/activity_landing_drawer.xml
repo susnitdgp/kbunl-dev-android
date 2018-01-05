@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+
+
+        <item
+            android:id="@+id/nav_upload_picture"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Upload Photo" />
+
+
+    </group>
+
+
+    <item android:title="IT Complaints">
+        <menu>
+
+            <item
+                android:id="@+id/nav_register_it_complain"
+                android:icon="@drawable/ic_rate_review_black_24dp"
+                android:title="Register IT Complaints" />
+
+
+            <item
+                android:id="@+id/nav_supervise_it_complain"
+                android:icon="@drawable/ic_supervisor_account_black_24dp"
+                android:title="Supervise IT Complaints" />
+
+        </menu>
+    </item>
+
+
+
+    <item android:title="Civil Complaints">
+        <menu>
+
+            <item
+                android:id="@+id/nav_register_civil_complain"
+                android:icon="@drawable/ic_rate_review_black_24dp"
+                android:title="Register Civil Complaints" />
+
+
+            <item
+                android:id="@+id/nav_supervise_civil_complain"
+                android:icon="@drawable/ic_supervisor_account_black_24dp"
+                android:title="Supervise IT Complaints" />
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+
+
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Sign Out" />
+
+        </menu>
+    </item>
+
+</menu>

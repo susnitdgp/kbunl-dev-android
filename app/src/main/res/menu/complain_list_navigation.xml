@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <item
+        android:id="@+id/complain_navigation_supervise"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Supervise" /> -->
+
+    <item
+        android:id="@+id/complain_navigation_pending"
+        android:icon="@drawable/ic_fiber_new_black_24dp"
+        android:title="Pending" />
+
+    <item
+        android:id="@+id/complain_navigation_assigned"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        android:title="Assigned" />
+
+    <item
+        android:id="@+id/complain_navigation_completed"
+        android:icon="@drawable/ic_done_all_black_24dp"
+        android:title="Completed" />
+    <item
+        android:id="@+id/complain_navigation_partial"
+        android:icon="@drawable/ic_done_black_24dp"
+        android:title="Partial">
+
+
+
+
+    </item>
+
+
+
+    <item
+        android:id="@+id/complain_navigation_supervisor"
+        android:icon="@drawable/ic_supervisor_account_black_24dp"
+        android:title="Supervisor" />
+
+</menu>
